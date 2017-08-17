@@ -39,7 +39,11 @@ Plug 'elmcast/elm-vim'
 call plug#end()
 
 colorscheme monokai
-set guifont=Inconsolata\ 16
+if has("osx")
+	set guifont=Monaco:h16
+else
+	set guifont=Inconsolata\ 16
+endif
 
 set encoding=utf-8
 
