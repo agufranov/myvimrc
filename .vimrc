@@ -53,6 +53,9 @@ filetype plugin on
 
 syntax on
 
+set noswapfile
+set nobackup
+
 " $MYVIMRC helpers
 nnoremap <Leader>ee :e $MYVIMRC<cr>
 nnoremap <Leader>et :tabnew $MYVIMRC<cr>
