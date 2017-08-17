@@ -40,7 +40,7 @@ call plug#end()
 
 colorscheme monokai
 if has("osx")
-	set guifont=Monaco:h16
+	set guifont=InconsolataGo\ Nerd\ Font:h18
 else
 	set guifont=Inconsolata\ 16
 endif
