@@ -116,7 +116,9 @@ if !exists('g:neocomplete#force_omni_input_patterns')
     let g:neocomplete#force_omni_input_patterns = {}
 endif
 let g:neocomplete#force_omni_input_patterns['default'] = '\h\w*'
-let g:neocomplete#force_omni_input_patterns['typescript'] = '[^. *\t]\.\w*\|\h\w*::'
+if !(has("osx") && has("gui")) " Omnicomplete hangs in OS X gvim for Typescript
+	let g:neocomplete#force_omni_input_patterns['typescript'] = '[^. *\t]\.\w*\|\h\w*::'
+endif
 
 let g:tsuquyomi_completion_detail = 1
 let g:elm_detailed_complete = 1
