@@ -46,9 +46,20 @@ else
 	set guifont=Inconsolata\ 16
 endif
 
+set guioptions-=Tm
+
 set encoding=utf-8
 
 inoremap <Tab> <Right><Esc>
+nnoremap <C-n> :NERDTreeTabsToggle<cr>
+
+" Window navigation
+nnoremap <silent> <A-h> :wincmd h<cr>
+nnoremap <silent> <A-j> :wincmd j<cr>
+nnoremap <silent> <A-k> :wincmd k<cr>
+nnoremap <silent> <A-l> :wincmd l<cr>
+nnoremap <A-n> :NERDTreeFocusToggle<cr>
+nnoremap <C-A-n> :NERDTreeTabsFind<cr>
 
 filetype plugin on
 
