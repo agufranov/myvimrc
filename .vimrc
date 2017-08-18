@@ -55,12 +55,29 @@ inoremap <Tab> <Right><Esc>
 nnoremap <C-n> :NERDTreeTabsToggle<cr>
 
 " Window navigation
-nnoremap <silent> <A-h> :wincmd h<cr>
-nnoremap <silent> <A-j> :wincmd j<cr>
-nnoremap <silent> <A-k> :wincmd k<cr>
-nnoremap <silent> <A-l> :wincmd l<cr>
-nnoremap <A-n> :NERDTreeFocusToggle<cr>
-nnoremap <C-A-n> :NERDTreeTabsFind<cr>
+" TODO Think about mappings (Alt-N doesn't work in MacVim gui)
+if has("osx") && has("gui")
+	nnoremap <silent> ˙ :wincmd h<cr>
+	nnoremap <silent> ∆ :wincmd j<cr>
+	nnoremap <silent> ˚ :wincmd k<cr>
+	nnoremap <silent> ¬ :wincmd l<cr>
+	noremap ˜ :NERDTreeFocusToggle<cr>
+	nnoremap  :NERDTreeTabsFind<cr>
+elseif has("osx") && !has("gui")
+	nnoremap <silent> h :wincmd h<cr>
+	nnoremap <silent> j :wincmd j<cr>
+	nnoremap <silent> k :wincmd k<cr>
+	nnoremap <silent> l :wincmd l<cr>
+	noremap n :NERDTreeFocusToggle<cr>
+	nnoremap N :NERDTreeTabsFind<cr>
+else
+	nnoremap <silent> <A-h> :wincmd h<cr>
+	nnoremap <silent> <A-j> :wincmd j<cr>
+	nnoremap <silent> <A-k> :wincmd k<cr>
+	nnoremap <silent> <A-l> :wincmd l<cr>
+	nnoremap <A-n> :NERDTreeFocusToggle<cr>
+	nnoremap <C-A-n> :NERDTreeTabsFind<cr>
+endif
 
 filetype plugin on
 
@@ -77,7 +94,7 @@ nnoremap <Leader>ei :w<bar>so $MYVIMRC<bar>PlugInstall<cr>
 
 let g:NERDTreeChDirMode=2
 
-cd ~/src/elm-todomvc
+cd ~/src
 
 let g:airline_powerline_fonts = 1
 
