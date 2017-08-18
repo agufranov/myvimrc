@@ -20,6 +20,7 @@ Plug 'ryanoasis/vim-devicons'
 " Dev tools
 Plug 'vim-airline/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'scrooloose/nerdcommenter'
 
 " Tags
 Plug 'majutsushi/tagbar'
