@@ -46,7 +46,8 @@ else
 	set guifont=Inconsolata\ 16
 endif
 
-set guioptions-=Tm
+set guioptions-=m
+set guioptions-=T
 
 set encoding=utf-8
 
