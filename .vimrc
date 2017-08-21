@@ -22,6 +22,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/nerdcommenter'
 
+" Git
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+
 " Tags
 Plug 'majutsushi/tagbar'
 Plug 'bitterjug/vim-tagbar-ctags-elm'
