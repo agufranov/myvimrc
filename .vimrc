@@ -36,6 +36,9 @@ Plug 'Shougo/neocomplete.vim'
 " Lint
 Plug 'w0rp/ale'
 
+" HTML
+Plug 'mattn/emmet-vim'
+
 " Langs
 Plug 'leafgarland/typescript-vim'
 Plug 'Quramy/tsuquyomi'
@@ -159,3 +162,5 @@ endif
 
 let g:tsuquyomi_completion_detail = 1
 let g:elm_detailed_complete = 1
+
+let g:user_emmet_leader_key='<C-C>'
