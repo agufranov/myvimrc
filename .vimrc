@@ -88,7 +88,7 @@ else
 	nnoremap <A-n> :NERDTreeFocusToggle<cr>
 	nnoremap <C-A-n> :NERDTreeTabsFind<cr>
 	" TODO check in Linux
-	nnoremap <A-p> :tabnew <bar> SideSearch
+	nnoremap <A-p> :tabnew <bar> SideSearch 
 endif
 
 filetype plugin on
