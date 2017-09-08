@@ -13,6 +13,8 @@ Plug 'morhetz/gruvbox'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ddrscott/vim-side-search'
 
+" Easymotion
+Plug 'easymotion/vim-easymotion'
 " Tree
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
