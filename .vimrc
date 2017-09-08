@@ -72,7 +72,7 @@ if has("osx") && has("gui")
 	nnoremap <silent> ¬ :wincmd l<cr>
 	noremap ˜ :NERDTreeFocusToggle<cr>
 	nnoremap  :NERDTreeTabsFind<cr>
-	nnoremap π :tabnew <bar> SideSearch 
+	nnoremap π :SideSearch 
 elseif has("osx") && !has("gui")
 	nnoremap <silent> h :wincmd h<cr>
 	nnoremap <silent> j :wincmd j<cr>
@@ -80,7 +80,7 @@ elseif has("osx") && !has("gui")
 	nnoremap <silent> l :wincmd l<cr>
 	noremap n :NERDTreeFocusToggle<cr>
 	nnoremap N :NERDTreeTabsFind<cr>
-	nnoremap p :tabnew <bar> SideSearch 
+	nnoremap p :SideSearch 
 else
 	nnoremap <silent> <A-h> :wincmd h<cr>
 	nnoremap <silent> <A-j> :wincmd j<cr>
@@ -88,8 +88,7 @@ else
 	nnoremap <silent> <A-l> :wincmd l<cr>
 	nnoremap <A-n> :NERDTreeFocusToggle<cr>
 	nnoremap <C-A-n> :NERDTreeTabsFind<cr>
-	" TODO check in Linux
-	nnoremap <A-p> :tabnew <bar> SideSearch 
+	nnoremap <A-p> :SideSearch 
 endif
 
 filetype plugin on
