@@ -22,6 +22,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/nerdcommenter'
+let NERDSpaceDelims=1
 
 " Git
 Plug 'tpope/vim-fugitive'
