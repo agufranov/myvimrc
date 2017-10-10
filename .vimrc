@@ -47,6 +47,7 @@ Plug 'mattn/emmet-vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'Quramy/tsuquyomi'
 Plug 'elmcast/elm-vim'
+Plug 'kchmck/vim-coffee-script'
 
 call plug#end()
 
