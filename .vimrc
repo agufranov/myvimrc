@@ -8,6 +8,7 @@ Plug 'tpope/vim-sensible'
 Plug 'crusoexia/vim-monokai'
 Plug 'altercation/vim-colors-solarized'
 Plug 'morhetz/gruvbox'
+Plug 'mhartington/oceanic-next'
 
 " Search
 Plug 'ctrlpvim/ctrlp.vim'
@@ -25,6 +26,13 @@ Plug 'vim-airline/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/nerdcommenter'
 let NERDSpaceDelims=1
+
+" Javascript
+" Plug 'othree/yajs.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'othree/es.next.syntax.vim'
+Plug 'mxw/vim-jsx'
+Plug 'galooshi/vim-import-js'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -48,12 +56,17 @@ Plug 'leafgarland/typescript-vim'
 Plug 'Quramy/tsuquyomi'
 Plug 'elmcast/elm-vim'
 Plug 'kchmck/vim-coffee-script'
+Plug 'flowtype/vim-flow'
+Plug 'evidens/vim-twig'
 
 call plug#end()
 
-colorscheme monokai
 if has("osx")
-	set guifont=InconsolataGo\ Nerd\ Font:h18
+  if has("gui_macvim")
+    set macligatures
+  endif
+	" set guifont=Knack\ Regular\ Nerd\ Font\ Complete\ Mono:h14
+	set guifont=Fira\ Code:h14
 else
 	set guifont=Inconsolata\ 16
 endif
@@ -146,6 +159,9 @@ let g:ale_linters = {
 	\'typescript': ['tsserver', 'tslint']
 \}
 
+au FileType javascript set fdm=syntax
+au FileType javascript set fdl=500
+
 
 """ NEOCOMPLETE
 " Disable AutoComplPop.
@@ -173,3 +189,9 @@ let g:elm_detailed_complete = 1
 
 let g:user_emmet_leader_key='<C-C>'
 let g:side_search_prg='rg -n --heading'
+
+set ts=2 sw=2 expandtab
+
+colorscheme gruvbox
+colorscheme koehler
+colorscheme gruvbox
